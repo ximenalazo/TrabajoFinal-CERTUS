@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo-Mascotalandia</title>
+
+    <!--Agregar los estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <!-- Agregar estilos personalizados -->
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+    <!-- logo  de whatsapp-->
+    <div id="contactoWhatsapp">
+
+        <a href="https://wa.me/+51970925363"> <img src="IMG/WhatsApp.svg" alt="Contacto por Whatsapp">
+        </a>
+    </div>
+
+
+
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <!--titulo 1-->
+            <h1>Mascotalandia</h1>
+            <!--titulo 2-->
+            <h2>El hogar de tu Mascota</h2>
+        </div>
+    </header>
+    <!-- Barra de menu -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mascotalandia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="NUEVO USUARIO.html">Regístrate</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-Flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#carritoModal">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal carrito -->
+    <div class="modal fade" id="carritoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carrito">
+                        <img id="carritovacio" class="img-fluid mx-auto d-block" src="carrito.compras.jpg"
+                            alt="carrito vacio">
+                        <figcaption class="text-center">Actualmente no cuenta con ningun producto en el carrito.
+                        </figcaption>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary disabled">Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Parte Principal -->
+    <main class="pageCatálogo container">
+        <!-- Sección de catálogo -->
+        <section class="row" id="Catálogo">
+
+            <!-- Articulo 01 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+
+                <img class="imgProduct" src="img/1.png" alt="Casaca_roja_de_perro">
+
+
+                <h3>Chompa Roja de osito</h3>
+                <p>
+                    <span class="precioOriginal">S/ 100.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 50.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+
+
+            <!-- Articulo 02 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/2.png" alt="Chompas_corderito_de_frutas_para_perro">
+
+
+                <h3>Chompa soffy fruit</h3>
+                <p>
+                    <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 03 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+
+                <img class="imgProduct" src="img/3.png" alt="Casaca_para_perro ">
+
+
+                <h3>Casaca dual verano/invierno</h3>
+                <p>
+                    <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-S/20</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+
+            </article>
+
+
+            <!-- Articulo 04 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/4.png" alt="Chompa_para_perros">
+
+                <h3>Chompa BLUETIME elegante</h3>
+                <p>
+                    <span class="precioOriginal">S/ 40.00</span> <span class="precioDescuento">-S/10</span>
+                    <br><span class="precioFinal">S/ 30.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 05 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/5.png" alt="Camisetas_para_perro">
+
+                <h3>Polo ositos de colores</h3>
+                <p>
+                    <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-S/50%</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 06 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/6.png" alt="Chompa_de_peluche_para_perro">
+
+                <h3>Chompita cordero</h3>
+                <p>
+                    <span class="precioOriginal">S/ 70.00</span> <span class="precioDescuento">-S/20</span>
+                    <br><span class="precioFinal">S/ 50.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 07 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/7.png" alt="Casaca_verde_para_perro">
+
+                <h3>Casaca verde impermeable</h3>
+                <p>
+                    <span class="precioOriginal">S/ 70.00</span> <span class="precioDescuento">-S/30</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 08 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/8.png" alt="disfraz_para_perro_stitch">
+
+                <h3>Disfraz stitch pequeño</h3>
+                <p>
+                    <span class="precioOriginal">S/ 60.00</span> <span class="precioDescuento">-S/30</span>
+                    <br><span class="precioFinal">S/ 30.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 09 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/9.png" alt="Casaca_militar_para_perro">
+
+                <h3>Casaca militar para perro</h3>
+                <p>
+                    <span class="precioOriginal">S/ 80.00</span> <span class="precioDescuento">-S/30</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 10 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/10.png" alt="Disfraz_de_zorro_para_perro">
+
+                <h3>Disfraz zorrito naranja</h3>
+                <p>
+                    <span class="precioOriginal">S/ 40.00</span> <span class="precioDescuento">-S/20</span>
+                    <br><span class="precioFinal">S/ 20.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 11 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/11.png" alt="DisfrazDBZ_para_Perro">
+
+                <h3>Disfraz Dragon Ball Z para perro</h3>
+                <p>
+                    <span class="precioOriginal">S/ 40.00</span> <span class="precioDescuento">-S/20</span>
+                    <br><span class="precioFinal">S/ 20.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+            <!-- Articulo 12 -->
+            <article class="col-6 col-sm-4 col-lg-3">
+
+                <img class="imgProduct" src="img/12.png" alt="dizfras_de_vaca_para_perro">
+
+                <h3>Disfraz de vaca para perro</h3>
+                <p>
+                    <span class="precioOriginal">S/ 50.00</span> <span class="precioDescuento">-S/20</span>
+                    <br><span class="precioFinal">S/ 30.00</span>
+                </p>
+                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+
+            </article>
+
+
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        Creado por Ximena Lazo - 2023
+    </footer>
+    <!-- código javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- código javascript del proyecto -->
+   <script src="main.js"></script>
+</body>
+
+</html>
